@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videó Feltöltés</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+            <li><a class="active" href="videok.html">Home</a></li>
+            <li><a class="" href="klippek.html">klippek</a></li>
+            <li><a class="" href="belepes.html">Belépés</a></li>            
+            <li><a class="" href="jelentkez.html">Regisztráció</a></li>
+        </ul>
+    </div>
+    <header>
+    </header>
+    <main>
+        <form id="videoUploadForm" enctype="multipart/form-data">
+            <label for="videoFile">klipp kiválasztása:</label>
+            <input type="file" id="videoFile" name="videoFile" accept="video/*" required>
+            <button type="submit" onclick="uploadVideo()">Feltöltés</button>
+        </form>
+    </main>
+    <script>
+        function uploadVideo() {
+            console.log("Videó feltöltve!");
+        }
+
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.style.display = (nav.style.display === 'flex' || nav.style.display === '') ? 'none' : 'flex';
+        }
+    </script>
+</body>
+<div class="trapezoid"></div>  
+<div class="trapezoid2"></div>  
+</html>
+
